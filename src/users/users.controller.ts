@@ -4,7 +4,6 @@ import { UserLoginDto } from './dto/user-login.dto';
 import { VerifyEmailDto } from './dto/verify-email.dto';
 import { UserInfo } from './dto/UserInfo';
 import { UsersService } from './users.service';
-import { errorMonitor } from 'events';
 
 @Controller('users')
 export class UsersController {
