@@ -2,7 +2,7 @@ import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UserLoginDto } from './dto/user-login.dto';
 import { VerifyEmailDto } from './dto/verify-email.dto';
-import { UserInfo } from './dto/UserInfo';
+import { UserInfo } from './UserInfo';
 import { UsersService } from './users.service';
 
 @Controller('users')
@@ -19,7 +19,6 @@ export class UsersController {
     async verifyEmail(@Query() dto: VerifyEmailDto) : Promise<string> {
         const { signupVerifyToken } = dto;
 
-    
         return await this.userService.verifyEmail(signupVerifyToken);
     }
 

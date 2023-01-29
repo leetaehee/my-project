@@ -1,7 +1,6 @@
 import * as uuid from 'uuid';
 import { Injectable } from '@nestjs/common';
 import { EmailService } from 'src/email/email.service';
-import { sign } from 'crypto';
 
 @Injectable()
 export class UsersService {
