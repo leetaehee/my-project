@@ -6,6 +6,6 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return "Hello World!";
+    return process.env.DATABASE_HOST;
   }
 }
