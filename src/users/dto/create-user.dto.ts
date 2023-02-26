@@ -10,7 +10,7 @@ export class CreateUserDto {
     })
 
     @Transform(params => params.value.trim())
-    @NotIn('password', { message: 'password는 name과 같은 문자열을 포함 할 수 없습ㄴ디ㅏ.'})
+    @NotIn('password', { message: 'password는 name과 같은 문자열을 포함 할 수 없습니다.'})
     @IsString()
     @MinLength(2)
     @MaxLength(30)
