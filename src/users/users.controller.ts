@@ -12,7 +12,7 @@ export class UsersController {
     @Post()
     async createUser(@Body() dto: CreateUserDto) : Promise<void> {
         const { name, email, password} = dto;
-        console.log(name + "님");
+        console.log(name + " 님");
         await this.userService.createUser(name, email, password);
     }
 
